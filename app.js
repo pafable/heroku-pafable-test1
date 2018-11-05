@@ -11,6 +11,6 @@ app.get("/bye", function(req,res){
     res.send("Bye World");
 });
 
-app.listen(80, process.env.IP, function(req,res){
+app.listen(process.env.PORT, process.env.IP, function(req,res){
     console.log("Server Started");
 });
